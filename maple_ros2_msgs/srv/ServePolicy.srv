@@ -1,0 +1,7 @@
+# Request to serve a MAPLE policy container
+string spec          # e.g. "openvla:7b", "smolvla:base"
+string device        # e.g. "cuda:0", "cpu"
+---
+bool success
+string policy_id     # Assigned policy ID if successful
+string message

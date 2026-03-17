@@ -1,0 +1,24 @@
+# Goal: run a single evaluation episode
+string policy_id
+string env_id
+string task
+string instruction     # Optional override; empty = use task default
+int32 seed 0
+int32 max_steps 300
+bool save_video false
+---
+# Result: episode outcome
+string run_id
+bool success
+uint32 steps
+float64 total_reward
+bool terminated
+bool truncated
+string video_path
+float64 duration_seconds
+---
+# Feedback: per-step progress
+uint32 current_step
+uint32 max_steps
+float64 cumulative_reward
+float64 step_inference_ms

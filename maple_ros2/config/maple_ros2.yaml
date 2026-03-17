@@ -1,0 +1,39 @@
+# maple_ros2 default configuration
+# Override per-node parameters at launch time or via ros2 param set.
+
+maple_daemon_bridge:
+  ros__parameters:
+    daemon_host: "localhost"
+    daemon_port: 8000
+    health_rate: 1.0
+
+maple_policy_server:
+  ros__parameters:
+    daemon_host: "localhost"
+    daemon_port: 8000
+    policy_id: ""                    # Set at launch: e.g. "openvla-7b-a1b2c3d4"
+    default_instruction: ""          # Fallback instruction if no topic msg
+    publish_rate: 0.0                # 0 = as fast as images arrive
+    image_encoding: "rgb8"
+    joint_names: [""]                # Fill in for ros2_control JointTrajectory output
+    model_kwargs: "{}"               # JSON, e.g. '{"unnorm_key":"libero_spatial"}'
+
+maple_env_bridge:
+  ros__parameters:
+    daemon_host: "localhost"
+    daemon_port: 8000
+    env_id: ""                       # Set at launch: e.g. "libero-x1y2z3w4"
+    auto_reset: true
+    image_key: "agentview_image"     # Key in MAPLE observation dict containing the image
+    proprio_key: "robot0_proprio-state"
+
+maple_eval:
+  ros__parameters:
+    daemon_host: "localhost"
+    daemon_port: 8000
+
+maple_diagnostics:
+  ros__parameters:
+    daemon_host: "localhost"
+    daemon_port: 8000
+    rate: 0.5

@@ -1,0 +1,8 @@
+# List tasks available for an environment
+string env_name        # e.g. "libero"
+string suite           # Optional suite filter, e.g. "libero_10"
+---
+bool success
+string[] task_names
+string[] task_instructions
+string message

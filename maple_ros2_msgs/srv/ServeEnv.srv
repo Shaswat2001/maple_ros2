@@ -1,0 +1,7 @@
+# Request to serve a MAPLE environment container
+string name          # e.g. "libero", "robocasa", "bridge"
+string device        # e.g. "cuda:0", "cpu"
+---
+bool success
+string env_id        # Assigned env ID if successful
+string message

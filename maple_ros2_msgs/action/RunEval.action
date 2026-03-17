@@ -1,0 +1,27 @@
+# Goal: start a batch evaluation
+string policy_id
+string env_id
+string[] tasks
+int32[] seeds
+int32 max_steps 300
+bool save_video false
+---
+# Result: final evaluation summary
+string batch_id
+uint32 total_episodes
+uint32 successful_episodes
+uint32 failed_episodes
+float64 success_rate
+float64 avg_reward
+float64 avg_steps
+float64 total_duration_seconds
+string results_json       # Full BatchResults as JSON string
+---
+# Feedback: per-episode progress
+uint32 completed
+uint32 total
+string last_task
+int32 last_seed
+bool last_success
+float64 last_reward
+float64 current_success_rate

@@ -1,0 +1,5 @@
+# List available and serving environments
+---
+string[] available_backends    # e.g. ["libero", "robocasa", "bridge"]
+string[] serving_ids           # Currently running env IDs
+string[] serving_backends      # Backend name for each serving ID

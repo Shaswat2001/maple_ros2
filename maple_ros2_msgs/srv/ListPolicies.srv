@@ -1,0 +1,6 @@
+# List available and serving policies
+---
+string[] available_backends    # e.g. ["openvla", "smolvla", "openpi"]
+string[] serving_ids           # Currently running policy IDs
+string[] serving_backends      # Backend name for each serving ID
+string[] serving_versions      # Version for each serving ID
