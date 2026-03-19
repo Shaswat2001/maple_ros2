@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Shaswat2001/maple_ros2/actions"><img src="https://img.shields.io/github/actions/workflow/status/Shaswat2001/maple_ros2/ci.yml?branch=main&style=flat-square&label=CI" alt="CI"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT"></a>
   <a href="https://github.com/Shaswat2001/maple-robotics"><img src="https://img.shields.io/badge/MAPLE-v0.1-orange?style=flat-square&logo=github" alt="MAPLE"></a>
   <a href="https://docs.ros.org/en/jazzy/"><img src="https://img.shields.io/badge/ROS_2-Jazzy%20|%20Kilted-blue?style=flat-square&logo=ros" alt="ROS 2"></a>
@@ -200,17 +199,6 @@ colcon build --packages-select maple_ros2_msgs maple_ros2
 colcon test --packages-select maple_ros2
 colcon test-result --verbose
 ```
-
----
-
-## Roadmap
-
-- [ ] Gazebo environment backend (native ROS 2 sim alongside MAPLE Docker envs)
-- [ ] `ros2_tracing` integration for VLA inference latency profiling
-- [ ] World-model-based runtime safety monitor node
-- [ ] Latency benchmark suite across policies and hardware
-- [ ] Real-robot deployment examples (SO-100, Franka)
-
 ---
 
 ## Related Projects
@@ -219,24 +207,4 @@ colcon test-result --verbose
 |---|---|
 | [MAPLE](https://github.com/Shaswat2001/maple-robotics) | Underlying evaluation framework |
 | [OpenVLA](https://github.com/openvla/openvla) | Supported VLA model |
-| [LeRobot](https://github.com/huggingface/lerobot) | Robot learning framework |
 | [ros2_control](https://github.com/ros-controls/ros2_control) | Control framework we integrate with |
-
----
-
-## Citation
-
-```bibtex
-@software{maple_ros2,
-  title={maple\_ros2: Containerized VLA Policy Evaluation for the ROS 2 Ecosystem},
-  author={Garg, Shaswat},
-  year={2026},
-  url={https://github.com/Shaswat2001/maple_ros2}
-}
-```
-
----
-
-<p align="center">
-  <b>MIT License</b> · Built for <a href="https://roscon.ros.org/2026/">ROSCon Global 2026</a> in Toronto
-</p>
