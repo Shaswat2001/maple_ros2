@@ -1,6 +1,7 @@
 # MAPLE ROS2
+
 <p align="center">
-  <img src="docs/maple_ros2_banner.svg" alt="MAPLE ⬥ ROS 2" width="700"/>
+  <img src="docs/logo.svg" alt="MAPLE ⬥ ROS 2" width="700"/>
 </p>
 
 <p align="center">
