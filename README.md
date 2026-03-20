@@ -3,7 +3,6 @@
 <p align="center">
   <img src="docs/logo.svg" alt="MAPLE ⬥ ROS 2" width="700"/>
 </p>
-
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT"></a>
   <a href="https://github.com/Shaswat2001/maple-robotics"><img src="https://img.shields.io/badge/MAPLE-v0.1-orange?style=flat-square&logo=github" alt="MAPLE"></a>
